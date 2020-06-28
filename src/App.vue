@@ -2,7 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Modal</router-link>|
-      <router-link to="/list">List</router-link>
+      <router-link to="/list">List</router-link>|
+      <router-link to="/drawer">Drawer</router-link>
     </div>
     <transition name="slide-fade" mode="out-in">
       <router-view />
@@ -18,8 +19,11 @@
   text-align: center;
   color: #2c3e50;
 }
-
+button:focus {
+  outline: none;
+}
 button {
+  border: 0;
   height: 2.2em;
   margin: 0.5em;
   border-radius: 0.3em;
@@ -111,6 +115,6 @@ ul {
 }
 
 .slide-up-move {
-  transition: transform 0.5s ease-out;
+  transition: transform 0.8s ease-in;
 }
 </style>
