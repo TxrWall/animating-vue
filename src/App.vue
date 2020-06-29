@@ -1,13 +1,17 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Modal</router-link>|
-      <router-link to="/list">List</router-link>|
-      <router-link to="/drawer">Drawer</router-link>
+      <router-link to="/">Modal</router-link> |
+      <router-link to="/list">List</router-link> |
+      <router-link to="/drawer">Drawer</router-link> |
+      <router-link to="/cards">Cards</router-link> |
+      <router-link to="/simple">Simple</router-link> |
+      <router-link to="/stagger">Stagger</router-link> |
+      <router-link to="/state">State</router-link> |
+      <router-link to="/timeline">Timeline</router-link> |
+      <router-link to="/master">Master</router-link>
     </div>
-    <transition name="slide-fade" mode="out-in">
-      <router-view />
-    </transition>
+    <router-view />
   </div>
 </template>
 
@@ -19,11 +23,8 @@
   text-align: center;
   color: #2c3e50;
 }
-button:focus {
-  outline: none;
-}
+
 button {
-  border: 0;
   height: 2.2em;
   margin: 0.5em;
   border-radius: 0.3em;

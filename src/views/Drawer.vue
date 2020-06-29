@@ -1,6 +1,9 @@
 <template>
   <div>
-    <button @click="isOpen = !isOpen">My Profile</button>
+    <button @click="isOpen = !isOpen">
+      My Profile
+    </button>
+
     <transition
       @before-enter="beforeEnter"
       @enter="enter"
@@ -60,13 +63,14 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 12em;
   height: 20em;
+  width: 12em;
   border-radius: 1%;
   background-color: #e0e0e0;
   box-shadow: 0.08em 0.03em 0.4em #ababab;
   padding-top: 0.7em;
 }
+
 .drawer div {
   height: 3.5em;
   width: 95%;
